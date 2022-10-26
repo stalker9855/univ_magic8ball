@@ -1,5 +1,5 @@
-//let body = document.querySelector('body');
-//body.innerHTML = '<div class="whiteback"><input type="text" id="input"><div id="circle"><p id="eight">8</p></div></div>';
+let body = document.querySelector('body');
+body.innerHTML = '<div class="whiteback"><p id="output">&#160;</p><div id="circle" style=" margin: 25px;"> <div id="circle_internal"><p id="eight">8</p></div></div><input type="text" id="input" placeholder="Ask and push me"></div>';
 
 
 const ball = document.getElementById('circle');
