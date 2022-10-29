@@ -1,33 +1,78 @@
 body{
-    width: 100%;
-    margin: 0;
+    margin: 0px auto;
     background-color: #76b852;
-    display: flex;
 }
 p{
     font-size: 4vh;
     text-align: center;
 }
 button{
-    font-size: 5vh;
+    font-size: 48px;
 }
 
 .whiteback{
     background-color: white;
     font-size: 100%;
-    width: 95%;
-    height: 100vh;
+    max-width: 1200px;
+    min-height: 100vh;
     align-items: center;
     position: relative;
-    margin: auto;
+    margin: 0px auto;
     display: flex;
     flex-direction: column;
     box-shadow: 3px 1px 10px 1px rgba(0,0,0,0.5);
 }
+@media( max-width: 1200px)
+{
+    .whiteback{
+        max-width: 970px;
+    }
+    #circle{
+        max-width: 460px;
+        max-height: 460px;
+    }
+    #eight{
+        font-size: 100px;
+    }
+}
+@media( max-width: 992px)
+{
+    .whiteback{
+        max-width: 750px;
+    }
+    #circle{
+        max-width: 380px;
+        max-height: 380px;
+    }
+    #eight{
+        font-size: 80px;
+    }
+    #input{
+        max-width: 300px;
+    }
+
+}
+@media( max-width: 767px)
+{
+    .whiteback{
+        max-width: none;
+    }
+    #circle{
+        max-width: 360px;
+        max-height: 360px;
+    }
+    #eight{
+        font-size: 40px;
+    }
+    #input{
+        max-width: 210px;
+    }
+    
+}
 input{
     margin-top: 20px;
     font-size: 36px;
-    width: 30%;
+    max-width: 400px;
     text-align: center;
     border-color: #222;
     box-shadow: 0px 0px 20px #222;
@@ -75,7 +120,7 @@ input{
 }
 #eight {
     color:#222;
-    font-size: 21vh;
+    font-size: 136px;
     font-weight: bolder;
     font-family: sans-serif;
     user-select: none;
